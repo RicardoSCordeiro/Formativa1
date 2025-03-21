@@ -1,7 +1,7 @@
 import random
 
-prefixos = ["Giga", "Mega", "Mini", "Dark", "Fire", "Ice", "Thunder"]
-sufixos = ["zilla", "tron", "monster", "creep", "fang", "storm", "wolf"]
+prefixos = ["Giga", "Mega", "Mini", "Dark", "Fire", "Thunder"]
+sufixos = ["zilla", "tron", "monster", "creep", "fang", "storm" ]
 
 def gerar_nome_monstro():
     prefixo = random.choice(prefixos)
@@ -10,4 +10,4 @@ def gerar_nome_monstro():
     return nome
 
 print("Bem-vindo ao Gerador de Nome de Monstro!")
-print("Seu monstro é chamado:", gerar_nome_monstro())
+print("Seu monstro é:", gerar_nome_monstro())
