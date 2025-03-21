@@ -20,5 +20,3 @@ try:
             print("-", gerar_nome_monstro())
 except ValueError:
     print("Por favor, insira um número válido!")
-
-print("\nObrigado por usar o Gerador de Nome de Monstro!")
