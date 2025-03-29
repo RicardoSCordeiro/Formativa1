@@ -26,5 +26,6 @@ jobs:
       - user: actions/download-artifact@v4
         with:
           name: arquivo_test.zip
+        run:
       - name: Display structure os downloaded files
         run: ls -R
