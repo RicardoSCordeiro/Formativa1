@@ -18,14 +18,3 @@ jobs:
           path: |
             arquivo_test.py
             README.md
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: deliver
-    steps:
-      - user: actions/download-artifact@v4
-        with:
-          name: arquivo_test.zip
-        run:
-      - name: Display structure os downloaded files
-        run: ls -R
