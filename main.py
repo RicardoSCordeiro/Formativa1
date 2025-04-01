@@ -11,9 +11,6 @@ def gerar_nome_monstro(prefixos, sufixos):
     sufixo = random.choice(sufixos)
     return prefixo + sufixo
 
-
-
-
 print("Bem-vindo ao Gerador de Nome de Monstro!")
 print(f"Gerando {quantidade} nomes de monstros!\n")
 print("Aqui estão seus monstros:")
