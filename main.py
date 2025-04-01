@@ -1,22 +1,20 @@
 import random
+import os
+
+quantidade = int(os.getenv("QUANTIDADE", 10))
 
 prefixos = ["Giga", "Mega", "Mini", "Dark", "Fire", "Ice", "Thunder"]
 sufixos = ["zilla", "tron", "monster", "creep", "fang", "storm", "wolf"]
 
-def gerar_nome_monstro():
+def gerar_nome_monstro(prefixos, sufixos):
     prefixo = random.choice(prefixos)
     sufixo = random.choice(sufixos)
-    nome = prefixo + sufixo
-    return nome
+    return prefixo + sufixo
 
 print("Bem-vindo ao Gerador de Nome de Monstro!")
-try:
-    quantidade = int(input("Quantos nomes de monstros você gostaria de gerar? "))
-    if quantidade <= 0:
-        print("Por favor, insira um número maior que zero!")
-    else:
-        print("\nAqui estão seus monstros:")
-        for _ in range(quantidade):
-            print("-", gerar_nome_monstro())
-except ValueError:
-    print("Por favor, insira um número válido!")
+print(f"Gerando {quantidade} nomes de monstros!\n")
+print("Aqui estão seus monstros:")
+for _ in range(quantidade):
+    print("-", gerar_nome_monstro(prefixos, sufixos))
+
+
