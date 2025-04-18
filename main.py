@@ -3,7 +3,7 @@ import os
 
 quantidade = int(os.getenv("QUANTIDADE", 10))
 
-prefixos = ["Giga", "Mega", "Mini", "Dark", "Fire", "Ice", "Thunder"]
+prefixos = ["Giga", "Mega", "Mini", "Dark", "Ice", "Thunder"]
 sufixos = ["zilla", "tron", "monster", "creep", "fang", "storm", "wolf"]
 
 def gerar_nome_monstro(prefixos, sufixos):
