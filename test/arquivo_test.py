@@ -1,3 +1,8 @@
+"""
+Este módulo contém testes unitários para as funções implementadas no módulo src.main.
+Ele verifica o comportamento das funções gerar_nome_monstro, prefixos e sufixos.
+"""
+
 import unittest
 from src.main import gerar_nome_monstro, prefixos, sufixos
 
