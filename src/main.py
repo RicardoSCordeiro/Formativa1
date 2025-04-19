@@ -1,5 +1,6 @@
-import random
 import os
+import random
+
 
 quantidade = int(os.getenv("QUANTIDADE", 10))
 
