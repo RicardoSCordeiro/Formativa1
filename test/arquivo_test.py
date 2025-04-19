@@ -23,7 +23,7 @@ class TestGeradorDeNomeMonstro(unittest.TestCase):
         self.assertIn(sufixo, sufixos)
 
     def test_listas_vazias(self):
-        with self.assertRaises(IndexError):
+        with self.assertRaises(ValueError):
             gerar_nome_monstro([], [])
 
     def test_retorno_tipo_string(self):
