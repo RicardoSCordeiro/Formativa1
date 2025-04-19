@@ -14,7 +14,7 @@
           uses: advanced-security/python-lint-code-scanning-action@v1.1.2
           with:
             linter: pylint
-  
+
     Roda-Testes:
       runs-on: ubuntu-latest
 
